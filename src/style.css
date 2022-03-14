@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.title {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+.title h1 {
+  font-size: 3rem;
+  margin: 50px 20px;
+}
+
+#pageContent {
+  width: 90%;
+  height: 85vh;
+  padding: 0 20px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#pageContent .printContainer,
+.inputContainer {
+  width: 600px;
+  height: 500px;
+}
+
+.headTitle {
+  height: 50px;
+  margin: 0 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headTitle button {
+  width: 100px;
+  height: 30px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid black;
+}
+
+.table td {
+  border: none;
+  padding: 8px;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* .table tr:hover {
+    background-color: #ddd;
+    color: brown;
+} */
+
+.inputContainer .headTitle-1 {
+  width: 60%;
+  height: 50px;
+  display: flex;
+  margin: 0 0 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputField {
+  position: relative;
+  width: 60%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputField input {
+  height: 30px;
+  padding: 0 10px;
+  outline: none;
+  border: 2px solid #000;
+}
+
+.inputField button {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  width: 100px;
+  height: 30px;
+}
