@@ -21,7 +21,7 @@
             <div class="printContainer">
                 <div class="headTitle">
                     <h2>Recent scores</h2>
-                    <button type="submit">Refresh</button>
+                    <button type="submit" id="refreshBtn">Refresh</button>
                 </div>
                 <table class="table">
                     <tbody>
@@ -35,14 +35,17 @@
                 <div class="headTitle-1">
                     <h2>Add your scores</h2>
                 </div>
-                <div class="inputField">
-                    <input type="text" placeholder="Your name" required>
-                    <input type="text" placeholder="Your score" required>
-                    <button type="button">Submit</button>
-                </div>
+                <form class="inputField" action="">
+                    <input type="text" id="username" name="name" placeholder="Your name" required>
+                    <input type="number" id="score" name="score" placeholder="Your score" required>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </section>
     </main>
+    <footer>
+        <p>Stanley SIMEON - &copy; All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
