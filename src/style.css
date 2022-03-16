@@ -4,6 +4,11 @@
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
+body {
+  background-color: rgb(225, 227, 230);
+  color: white;
+}
+
 .title {
   width: 100%;
   height: 100px;
@@ -12,30 +17,32 @@
 
 .title h1 {
   font-size: 3rem;
-  margin: 50px 20px;
+  margin: 50px 200px;
 }
 
 #pageContent {
-  width: 90%;
-  height: 85vh;
-  padding: 0 20px;
-  margin: auto;
+  width: 60%;
+  height: 55vh;
+  padding: 20px 20px;
+  margin: 50px auto;
   display: grid;
   grid-template-columns: 1fr 1fr auto;
   gap: 100px;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(50, 0, 97, 0.801);
+  border-radius: 15px;
 }
 
 #pageContent .printContainer,
 .inputContainer {
-  width: 600px;
+  width: 350px;
   height: 500px;
 }
 
 .headTitle {
   height: 50px;
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,7 +56,11 @@
 .listContainer {
   border-collapse: collapse;
   width: 100%;
+  height: 300px;
   border: 2px solid black;
+  border-radius: 5px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .listContainer li {
@@ -65,7 +76,7 @@
   width: 60%;
   height: 50px;
   display: flex;
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   justify-content: space-between;
   align-items: center;
 }
@@ -73,7 +84,7 @@
 .inputField {
   position: relative;
   width: 60%;
-  height: 300px;
+  max-height: 300px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -94,17 +105,18 @@
   height: 30px;
 }
 
-footer {
-  position: relative;
+.footer {
+  position: absolute;
   width: 100%;
   height: 50px;
+  left: 0;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #000;
-  bottom: 0;
 }
 
-footer p {
+.footer p {
   color: rgb(145, 145, 145);
 }

@@ -350,7 +350,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  font-family: 'Poppins', Arial, Helvetica, sans-serif;\n}\n\n.title {\n  width: 100%;\n  height: 100px;\n  display: flex;\n}\n\n.title h1 {\n  font-size: 3rem;\n  margin: 50px 20px;\n}\n\n#pageContent {\n  width: 90%;\n  height: 85vh;\n  padding: 0 20px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: 1fr 1fr auto;\n  gap: 100px;\n  justify-content: space-between;\n  align-items: center;\n}\n\n#pageContent .printContainer,\n.inputContainer {\n  width: 600px;\n  height: 500px;\n}\n\n.headTitle {\n  height: 50px;\n  margin: 0 0 20px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.headTitle button {\n  width: 100px;\n  height: 30px;\n}\n\n.listContainer {\n  border-collapse: collapse;\n  width: 100%;\n  border: 2px solid black;\n}\n\n.listContainer li {\n  list-style: none;\n  padding: 8px;\n}\n\n.listContainer li:nth-child(even) {\n  background-color: #f2f2f2;\n}\n\n.inputContainer .headTitle-1 {\n  width: 60%;\n  height: 50px;\n  display: flex;\n  margin: 0 0 20px;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.inputField {\n  position: relative;\n  width: 60%;\n  height: 300px;\n  display: flex;\n  flex-direction: column;\n  gap: 20px;\n}\n\n.inputField input {\n  height: 30px;\n  padding: 0 10px;\n  outline: none;\n  border: 2px solid #000;\n}\n\n.inputField button {\n  position: absolute;\n  right: 0;\n  top: 100px;\n  width: 100px;\n  height: 30px;\n}\n\nfooter {\n  position: relative;\n  width: 100%;\n  height: 50px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background-color: #000;\n  bottom: 0;\n}\n\nfooter p {\n  color: rgb(145, 145, 145);\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  font-family: 'Poppins', Arial, Helvetica, sans-serif;\n}\n\nbody {\n  background-color: rgb(225, 227, 230);\n}\n\n.title {\n  width: 100%;\n  height: 100px;\n  display: flex;\n}\n\n.title h1 {\n  font-size: 3rem;\n  margin: 50px 20px;\n}\n\n#pageContent {\n  width: 90%;\n  height: 85vh;\n  padding: 0 20px;\n  margin: auto;\n  display: grid;\n  grid-template-columns: 1fr 1fr auto;\n  gap: 100px;\n  justify-content: space-between;\n  align-items: center;\n}\n\n#pageContent .printContainer,\n.inputContainer {\n  width: 600px;\n  height: 500px;\n}\n\n.headTitle {\n  height: 50px;\n  margin: 0 0 20px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.headTitle button {\n  width: 100px;\n  height: 30px;\n}\n\n.listContainer {\n  border-collapse: collapse;\n  width: 100%;\n  border: 2px solid black;\n}\n\n.listContainer li {\n  list-style: none;\n  padding: 8px;\n}\n\n.listContainer li:nth-child(even) {\n  background-color: #f2f2f2;\n}\n\n.inputContainer .headTitle-1 {\n  width: 60%;\n  height: 50px;\n  display: flex;\n  margin: 0 0 20px;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.inputField {\n  position: relative;\n  width: 60%;\n  max-height: 300px;\n  display: flex;\n  flex-direction: column;\n  gap: 20px;\n}\n\n.inputField input {\n  height: 30px;\n  padding: 0 10px;\n  outline: none;\n  border: 2px solid #000;\n}\n\n.inputField button {\n  position: absolute;\n  right: 0;\n  top: 100px;\n  width: 100px;\n  height: 30px;\n}\n\nfooter {\n  position: relative;\n  width: 100%;\n  height: 50px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background-color: #000;\n  bottom: 0;\n}\n\nfooter p {\n  color: rgb(145, 145, 145);\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -483,6 +483,7 @@ __webpack_require__.r(__webpack_exports__);
 class Lead {
   constructor() {
     this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
+    this.storage = localStorage;
   }
 
   async start(spiderGame) {
@@ -507,9 +508,6 @@ class Lead {
   }
 
   async postScore(gameId, username, score) {
-    if (username === '' || score === '') {
-      alert('All the Informations required!!!');
-    }
     const res = await fetch(`${this.url}${gameId}/scores/`, {
       method: 'POST',
       body: JSON.stringify({
@@ -545,7 +543,10 @@ class Front {
   arrayToFront(array) {
     this.listContainer.innerHTML = '';
     array.forEach((element) => {
-      this.listContainer.innerHTML += `<li class="item">${element.user} : ${element.score}</li>`;
+      const item = document.createElement('li');
+      item.className = 'item';
+      this.listContainer.appendChild(item);
+      item.innerHTML += `${element.user} : ${element.score}`;
     });
   }
 
@@ -554,8 +555,7 @@ class Front {
     this.score.value = '';
   }
 }
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Front());
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Front);
 
 /***/ })
 /******/ 	]);
@@ -640,23 +640,23 @@ __webpack_require__.r(__webpack_exports__);
 const form = document.querySelector('.inputField');
 const user = document.getElementById('username');
 const score = document.getElementById('score');
-const refreshBtn = document.querySelector('.refreshBtn');
+const refreshBtn = document.getElementById('refreshBtn');
 
 const leads = new _modules_lead_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
 const front = new _modules_front_js__WEBPACK_IMPORTED_MODULE_2__["default"]();
 
 let gameId;
-const gameStart = () => {
+const start = () => {
   leads
-    .gameStart('SpiderGame Project')
-    .then((res) => res.result.split(' '))
+    .start('SpiderGame')
+    .then((response) => response.result.split(' '))
     .then((response) => {
       [gameId] = [response[3]];
     });
 };
 
 const getScore = () => {
-  leads.getScore(gameId).then((res) => front.arrayToFront(res.result));
+  leads.getScore(gameId).then((response) => front.arrayToFront(response.result));
 };
 
 const postScore = (event) => {
@@ -665,7 +665,7 @@ const postScore = (event) => {
   event.preventDefault();
 };
 
-document.addEventListener('DOMContentLoaded', gameStart);
+document.addEventListener('DOMContentLoaded', start);
 form.addEventListener('submit', postScore);
 refreshBtn.addEventListener('click', getScore);
 })();
