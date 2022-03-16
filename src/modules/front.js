@@ -3,6 +3,7 @@ class Front {
     this.listContainer = document.querySelector('.listContainer');
     this.user = document.getElementById('username');
     this.score = document.getElementById('score');
+    this.space = document.getElementById('space');
   }
 
   arrayToFront(array) {

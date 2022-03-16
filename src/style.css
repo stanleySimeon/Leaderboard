@@ -9,7 +9,7 @@ main {
 }
 
 body {
-  background: linear-gradient(to top, #999999 0%, #f5f5f5 100%);
+  background: linear-gradient(to top, #999 0%, #f5f5f5 100%);
 }
 
 .title {
@@ -19,7 +19,9 @@ body {
 }
 
 .title h1 {
-  font-size: 3rem;
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 50px 200px;
   color: rgba(92, 1, 211, 0.801);
 }
@@ -110,6 +112,8 @@ body {
 .inputField input {
   height: 30px;
   padding: 0 10px;
+  font-size: .9rem;
+  color: rgb(43, 43, 43);
   outline: none;
   border: none;
   border-radius: 5px;
