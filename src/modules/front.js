@@ -7,7 +7,7 @@ class Front {
 
   arrayToFront(array) {
     this.listContainer.innerHTML = '';
-    array = array.sort((x, y) => x.score - y.score);
+    array = array.sort((x, y) => y.score - x.score);
     array.forEach((element) => {
       const item = document.createElement('li');
       item.className = 'item';
