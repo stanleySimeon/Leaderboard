@@ -12,6 +12,27 @@ body {
   background: linear-gradient(to top, #999 0%, #f5f5f5 100%);
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 26, 255, 0.795);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(247, 0, 255, 0.8);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(247, 0, 255, 0.8);
+}
+
 .title {
   width: 100%;
   height: 100px;
@@ -112,7 +133,7 @@ body {
 .inputField input {
   height: 30px;
   padding: 0 10px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: rgb(43, 43, 43);
   outline: none;
   border: none;
@@ -134,6 +155,12 @@ body {
   color: rgb(255, 255, 255);
   background: rgb(224, 0, 194);
   box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.35);
+}
+
+button:active {
+  color: rgb(224, 0, 194);
+  background-color: #f3f1f1;
+  transform: scale(0.95);
 }
 
 .footer {
