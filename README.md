@@ -33,4 +33,3 @@ run `python -m http:server` or `npm install -g live-server` after run `live-serv
 👤 **Author**
 - Stanley SIMEON
 - GitHub: [https://github.com/stanleySimeon]
-- LinkedIn: [https://www.linkedin.com/in/stanleySimeon-881091224/]
