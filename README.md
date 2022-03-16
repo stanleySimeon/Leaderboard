@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-- [Live Demo Link](https://stanleySimeon.github.io/Leaderboard/dist/)
+- [Live Demo Link](https://stanleySimeon.github.io/Leaderboard/apiBranch/dist/)
 
 
 ## Getting Started
