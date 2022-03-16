@@ -472,6 +472,91 @@ module.exports = function (cssWithMappingToString) {
   return list;
 };
 
+/***/ }),
+/* 11 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+class Lead {
+  constructor() {
+    this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
+  }
+
+  async start(spiderGame) {
+    const res = await fetch(this.url, {
+      method: 'POST',
+      body: JSON.stringify({
+        name: spiderGame,
+      }),
+      headers: {
+        'content-type': 'application/json; charset=UTF-8',
+      },
+    });
+
+    const resData = await res.json();
+    return resData;
+  }
+
+  async getScore(gameId) {
+    const res = await fetch(`${this.url}${gameId}/scores/`);
+    const resData = await res.json();
+    return resData;
+  }
+
+  async postScore(gameId, username, score) {
+    if (username === '' || score === '') {
+      alert('All the Informations required!!!');
+    }
+    const res = await fetch(`${this.url}${gameId}/scores/`, {
+      method: 'POST',
+      body: JSON.stringify({
+        user: username,
+        score,
+      }),
+      headers: {
+        'content-type': 'application/json; charset=UTF-8',
+      },
+    });
+    const resData = await res.json();
+    return resData;
+  }
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Lead);
+
+/***/ }),
+/* 12 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+class Front {
+  constructor() {
+    this.listContainer = document.querySelector('.listContainer');
+    this.user = document.getElementById('username');
+    this.score = document.getElementById('score');
+  }
+
+  arrayToFront(array) {
+    this.listContainer.innerHTML = '';
+    array.forEach((element) => {
+      this.listContainer.innerHTML += `<li class="item">${element.user} : ${element.score}</li>`;
+    });
+  }
+
+  inputCleaner() {
+    this.user.value = '';
+    this.score.value = '';
+  }
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Front());
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -546,7 +631,43 @@ var __webpack_exports__ = {};
 (() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _modules_lead_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _modules_front_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
 
+
+
+
+const form = document.querySelector('.inputField');
+const user = document.getElementById('username');
+const score = document.getElementById('score');
+const refreshBtn = document.querySelector('.refreshBtn');
+
+const leads = new _modules_lead_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
+const front = new _modules_front_js__WEBPACK_IMPORTED_MODULE_2__["default"]();
+
+let gameId;
+const gameStart = () => {
+  leads
+    .gameStart('SpiderGame Project')
+    .then((res) => res.result.split(' '))
+    .then((response) => {
+      [gameId] = [response[3]];
+    });
+};
+
+const getScore = () => {
+  leads.getScore(gameId).then((res) => front.arrayToFront(res.result));
+};
+
+const postScore = (event) => {
+  leads.postScore(gameId, user.value, score.value);
+  front.inputCleaner();
+  event.preventDefault();
+};
+
+document.addEventListener('DOMContentLoaded', gameStart);
+form.addEventListener('submit', postScore);
+refreshBtn.addEventListener('click', getScore);
 })();
 
 /******/ })()

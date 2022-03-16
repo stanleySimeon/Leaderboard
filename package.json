@@ -1,10 +1,4 @@
 {
-  "jest": {
-    "resetMocks": false,
-    "setupFiles": [
-      "jest-localstorage-mock"
-    ]
-  },
   "name": "leader-board",
   "version": "1.0.0",
   "description": "This project allow users to add and remove to Do from a list...",
