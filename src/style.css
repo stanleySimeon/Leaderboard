@@ -64,7 +64,7 @@ body {
 #pageContent .printContainer,
 .inputContainer {
   color: rgb(255, 255, 255);
-  width: 350px;
+  width: 100%;
   height: 400px;
 }
 
