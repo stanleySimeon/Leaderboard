@@ -8,9 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6WMEWZF5N8"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link rel="yandex-tableau-widget" href="assets/yandex-browser-manifest.json">
-    <link rel="manifest" href="assets/manifest.json">
     <script src="https://kit.fontawesome.com/84967187a9.js" crossorigin="anonymous"></script>
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-90K7L4LZ2P"></script>
     <script>
@@ -26,6 +23,7 @@
 <body>
     <header class="title">
         <h1>Leaderboard</h1>
+        <span class="bar"></span>
     </header>
     <main id="main">
         <section id="pageContent">
@@ -43,18 +41,21 @@
                     <h2>Add your scores</h2>
                 </div>
                 <form class="inputField" action="#">
-                    <input type="text" id="username" name="name" placeholder="Your name" required>
-                    <input type="number" id="score" name="score" placeholder="Your score" required>
+                    <input type="text" id="username" name="name" placeholder="Your name">
+                    <input type="number" id="score" name="score" placeholder="Your score">
                     <button type="submit" id="btn">SUBMIT</button>
                 </form>
                 <div class="status">
+                    <div id="statusShowHide">
+
+                    </div>
                 </div>
             </div>
         </section>
+        <div class="footer">
+            <p>Stanley SIMEON - &copy; All rights reserved.</p>
+        </div>
     </main>
-    <div class="footer">
-        <p>Stanley SIMEON - &copy; All rights reserved.</p>
-    </div>
 </body>
 
 </html>
