@@ -36,7 +36,7 @@ form.addEventListener('submit', postScore);
 refreshBtn.addEventListener('click', getScore);
 
 const submitBtn = document.getElementById('btn');
-const msgContainer = document.querySelector('.status');
+const msgContainer = document.querySelector('#statusShowHide');
 const successMsg = document.createElement('span');
 successMsg.className = 'success';
 successMsg.innerText = '✅ Success!!!';
