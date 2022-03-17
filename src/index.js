@@ -1,5 +1,4 @@
 import './style.css';
-import './media.css';
 import Lead from './modules/lead.js';
 import Front from './modules/front.js';
 
@@ -36,7 +35,7 @@ form.addEventListener('submit', postScore);
 refreshBtn.addEventListener('click', getScore);
 
 const submitBtn = document.getElementById('btn');
-const msgContainer = document.querySelector('#statusShowHide');
+const msgContainer = document.querySelector('.status');
 const successMsg = document.createElement('span');
 successMsg.className = 'success';
 successMsg.innerText = '✅ Success!!!';
