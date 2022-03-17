@@ -1,4 +1,5 @@
 import './style.css';
+import './media.css';
 import Lead from './modules/lead.js';
 import Front from './modules/front.js';
 

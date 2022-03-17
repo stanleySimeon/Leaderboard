@@ -1,0 +1,52 @@
+@media (max-width: 991px) {
+    .title h1{
+        font-size: 2rem;
+        margin: auto;
+    }
+    #pageContent {
+        width: 80%;
+        gap: 20px;
+        height: auto;
+        margin:auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .inputContainer {
+        position: relative;
+        height: 250px;
+        margin: auto;
+    }
+
+    .inputContainer .headTitle-1, h2 {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+
+    .inputField {
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    .status {
+        /* width: 92%;
+        margin: 80px auto; */
+        display: none;
+    }
+
+    .printContainer {
+        margin: auto;
+        background-color: red;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        display: none;
+    }
+    
+}
