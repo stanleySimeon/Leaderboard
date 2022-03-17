@@ -4,6 +4,14 @@
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
+main {
+  height: 78vh;
+}
+
+body {
+  background: linear-gradient(to top, #999 0%, #f5f5f5 100%);
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -39,17 +47,13 @@
   color: rgb(224, 0, 194);
 }
 
-.title .bar {
-  visibility: hidden;
-}
-
 #pageContent {
   width: 60%;
   height: 400px;
   padding: 20px 20px;
   margin: 50px auto;
   display: grid;
-  grid-template-columns: 1.5fr 1fr auto;
+  grid-template-columns: 1fr 1fr auto;
   gap: 100px;
   justify-content: space-between;
   align-items: center;
@@ -59,14 +63,9 @@
 
 #pageContent .printContainer,
 .inputContainer {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   color: rgb(255, 255, 255);
   width: 100%;
-  height: 380px;
-  padding: 10px;
+  height: 400px;
 }
 
 button {
@@ -74,7 +73,6 @@ button {
 }
 
 .headTitle {
-  width: 100%;
   height: 50px;
   margin: 0 0 10px;
   display: flex;
@@ -97,7 +95,7 @@ button {
 
 .listContainer {
   border-collapse: collapse;
-  width: 95%;
+  width: 100%;
   height: 300px;
   padding: 10px;
   background-color: aliceblue;
@@ -119,7 +117,7 @@ button {
 }
 
 .inputContainer .headTitle-1 {
-  width: 100%;
+  width: 60%;
   height: 50px;
   display: flex;
   margin: 0 0 10px;
@@ -129,7 +127,7 @@ button {
 
 .inputField {
   position: relative;
-  width: 100%;
+  width: 90%;
   max-height: 300px;
   display: flex;
   flex-direction: column;
@@ -149,9 +147,9 @@ button {
 
 .inputField button {
   position: absolute;
-  width: 100px;
   right: 0;
   top: 100px;
+  width: 100px;
   height: 30px;
   outline: none;
   border: none;
@@ -184,18 +182,9 @@ button:active {
   top: 100px;
   display: flex;
   align-items: center;
-  font-size: 0.7rem;
   border-radius: 6px;
   background-color: #f0f8ff;
   box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.35);
-}
-
-#statusShowHide {
-  width: 96%;
-  height: 100%;
-  margin: auto;
-  display: flex;
-  align-items: center;
 }
 
 .status .success {
@@ -206,6 +195,7 @@ button:active {
   position: absolute;
   width: 100%;
   height: 50px;
+  left: 0;
   bottom: 0;
   display: flex;
   justify-content: center;
