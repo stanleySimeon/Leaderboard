@@ -33,3 +33,28 @@ const postScore = (event) => {
 document.addEventListener('DOMContentLoaded', start);
 form.addEventListener('submit', postScore);
 refreshBtn.addEventListener('click', getScore);
+
+const submitBtn = document.getElementById('btn');
+const msgContainer = document.querySelector('.status');
+const successMsg = document.createElement('span');
+successMsg.className = 'success';
+successMsg.innerText = '✅ Success!!!';
+msgContainer.appendChild(successMsg);
+
+const rejectMsg = document.createElement('span');
+rejectMsg.className = 'reject';
+rejectMsg.innerText = '❌ Fail, required fields!!!';
+msgContainer.appendChild(rejectMsg);
+rejectMsg.style.color = 'red';
+rejectMsg.style.display = 'none';
+
+submitBtn.addEventListener('click', () => {
+  if (user.value === '' || score.value < 1) {
+    successMsg.style.display = 'none';
+    rejectMsg.style.display = 'block';
+  } else {
+    rejectMsg.style.display = 'none';
+    successMsg.style.display = 'block';
+    successMsg.style.color = 'green';
+  }
+});

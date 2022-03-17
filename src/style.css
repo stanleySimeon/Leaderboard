@@ -44,7 +44,7 @@ body {
   font-weight: bold;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 50px 200px;
-  color: rgba(92, 1, 211, 0.801);
+  color: rgb(224, 0, 194);
 }
 
 #pageContent {
@@ -66,6 +66,10 @@ body {
   color: rgb(255, 255, 255);
   width: 350px;
   height: 400px;
+}
+
+button {
+  user-select: none;
 }
 
 .headTitle {
@@ -161,6 +165,23 @@ button:active {
   color: rgb(224, 0, 194);
   background-color: #f3f1f1;
   transform: scale(0.95);
+}
+
+.status {
+  width: 85%;
+  height: 40px;
+  top: 400px;
+  margin: 200px 0;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #f0f8ff;
+  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.35);
+}
+
+.status .success {
+  display: none;
 }
 
 .footer {
