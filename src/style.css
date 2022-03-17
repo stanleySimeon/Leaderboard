@@ -53,7 +53,7 @@ body {
   padding: 20px 20px;
   margin: 50px auto;
   display: grid;
-  grid-template-columns: 1fr 1fr auto;
+  grid-template-columns: 1.5fr 1fr auto;
   gap: 100px;
   justify-content: space-between;
   align-items: center;
@@ -63,9 +63,14 @@ body {
 
 #pageContent .printContainer,
 .inputContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: rgb(255, 255, 255);
   width: 100%;
-  height: 400px;
+  height: 380px;
+  padding: 10px;
 }
 
 button {
@@ -73,6 +78,7 @@ button {
 }
 
 .headTitle {
+  width: 100%;
   height: 50px;
   margin: 0 0 10px;
   display: flex;
@@ -95,7 +101,7 @@ button {
 
 .listContainer {
   border-collapse: collapse;
-  width: 100%;
+  width: 95%;
   height: 300px;
   padding: 10px;
   background-color: aliceblue;
@@ -117,7 +123,7 @@ button {
 }
 
 .inputContainer .headTitle-1 {
-  width: 60%;
+  width: 100%;
   height: 50px;
   display: flex;
   margin: 0 0 10px;
@@ -127,7 +133,7 @@ button {
 
 .inputField {
   position: relative;
-  width: 90%;
+  width: 100%;
   max-height: 300px;
   display: flex;
   flex-direction: column;
@@ -168,10 +174,10 @@ button:active {
 }
 
 .status {
+  position: absolute;
   width: 85%;
-  height: 40px;
-  top: 400px;
-  margin: 200px 0;
+  height: 30px;
+  top: 360px;
   padding: 0 10px;
   display: flex;
   align-items: center;

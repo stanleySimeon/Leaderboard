@@ -39,6 +39,7 @@ const msgContainer = document.querySelector('.status');
 const successMsg = document.createElement('span');
 successMsg.className = 'success';
 successMsg.innerText = '✅ Success!!!';
+successMsg.style.color = 'green';
 msgContainer.appendChild(successMsg);
 
 const rejectMsg = document.createElement('span');
@@ -55,6 +56,5 @@ submitBtn.addEventListener('click', () => {
   } else {
     rejectMsg.style.display = 'none';
     successMsg.style.display = 'block';
-    successMsg.style.color = 'green';
   }
 });
