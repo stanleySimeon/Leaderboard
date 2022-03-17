@@ -350,7 +350,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  font-family: 'Poppins', Arial, Helvetica, sans-serif;\n}\n\nmain {\n  height: 78vh;\n}\n\nbody {\n  background: linear-gradient(to top, #999 0%, #f5f5f5 100%);\n}\n\n::-webkit-scrollbar {\n  width: 8px;\n}\n\n::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 26, 255, 0.795);\n  -webkit-border-radius: 10px;\n  border-radius: 10px;\n}\n\n::-webkit-scrollbar-thumb {\n  -webkit-border-radius: 10px;\n  border-radius: 10px;\n  background: rgba(247, 0, 255, 0.8);\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);\n}\n\n::-webkit-scrollbar-thumb:window-inactive {\n  background: rgba(247, 0, 255, 0.8);\n}\n\n.title {\n  width: 100%;\n  height: 100px;\n  display: flex;\n}\n\n.title h1 {\n  font-size: 4rem;\n  font-weight: bold;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n  margin: 50px 200px;\n  color: rgb(224, 0, 194);\n}\n\n#pageContent {\n  width: 60%;\n  height: 400px;\n  padding: 20px 20px;\n  margin: 50px auto;\n  display: grid;\n  grid-template-columns: 1.5fr 1fr auto;\n  gap: 100px;\n  justify-content: space-between;\n  align-items: center;\n  background-color: rgba(92, 1, 211, 0.801);\n  border-radius: 15px;\n}\n\n#pageContent .printContainer,\n.inputContainer {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  color: rgb(255, 255, 255);\n  width: 100%;\n  height: 380px;\n  padding: 10px;\n}\n\nbutton {\n  user-select: none;\n}\n\n.headTitle {\n  width: 100%;\n  height: 50px;\n  margin: 0 0 10px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.headTitle button {\n  width: 100px;\n  height: 30px;\n  outline: none;\n  border: none;\n  border-radius: 5px;\n  cursor: pointer;\n  font-size: 1rem;\n  color: rgb(255, 255, 255);\n  background: rgb(224, 0, 194);\n  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.35);\n}\n\n.listContainer {\n  border-collapse: collapse;\n  width: 95%;\n  height: 300px;\n  padding: 10px;\n  background-color: aliceblue;\n  border-radius: 5px;\n  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.35);\n  overflow-y: auto;\n  overflow-x: hidden;\n}\n\n.listContainer li {\n  list-style: none;\n  padding: 8px;\n  border-radius: 5px;\n  color: rgb(224, 0, 194);\n}\n\n.listContainer li:nth-child(even) {\n  background-color: rgba(92, 1, 211, 0.247);\n}\n\n.inputContainer .headTitle-1 {\n  width: 100%;\n  height: 50px;\n  display: flex;\n  margin: 0 0 10px;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.inputField {\n  position: relative;\n  width: 100%;\n  max-height: 300px;\n  display: flex;\n  flex-direction: column;\n  gap: 20px;\n}\n\n.inputField input {\n  height: 30px;\n  padding: 0 10px;\n  font-size: 0.9rem;\n  color: rgb(43, 43, 43);\n  outline: none;\n  border: none;\n  border-radius: 5px;\n  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.35);\n}\n\n.inputField button {\n  position: absolute;\n  right: 0;\n  top: 100px;\n  width: 100px;\n  height: 30px;\n  outline: none;\n  border: none;\n  border-radius: 5px;\n  cursor: pointer;\n  font-size: 1rem;\n  color: rgb(255, 255, 255);\n  background: rgb(224, 0, 194);\n  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.35);\n}\n\nbutton:active {\n  color: rgb(224, 0, 194);\n  background-color: #f3f1f1;\n  transform: scale(0.95);\n}\n\n.status {\n  position: absolute;\n  width: 85%;\n  height: 30px;\n  top: 360px;\n  padding: 0 10px;\n  display: flex;\n  align-items: center;\n  border-radius: 6px;\n  background-color: #f0f8ff;\n  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.35);\n}\n\n.status .success {\n  display: none;\n}\n\n.footer {\n  position: absolute;\n  width: 100%;\n  height: 50px;\n  left: 0;\n  bottom: 0;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background-color: #000;\n}\n\n.footer p {\n  color: rgb(145, 145, 145);\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  font-family: 'Poppins', Arial, Helvetica, sans-serif;\n}\n\n::-webkit-scrollbar {\n  width: 8px;\n}\n\n::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 26, 255, 0.795);\n  -webkit-border-radius: 10px;\n  border-radius: 10px;\n}\n\n::-webkit-scrollbar-thumb {\n  -webkit-border-radius: 10px;\n  border-radius: 10px;\n  background: rgba(247, 0, 255, 0.8);\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);\n}\n\n::-webkit-scrollbar-thumb:window-inactive {\n  background: rgba(247, 0, 255, 0.8);\n}\n\n.title {\n  width: 100%;\n  height: 100px;\n  display: flex;\n}\n\n.title h1 {\n  font-size: 4rem;\n  font-weight: bold;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n  margin: 50px 200px;\n  color: rgb(224, 0, 194);\n}\n\n.title .bar {\n  visibility: hidden;\n}\n\n#pageContent {\n  width: 60%;\n  height: 400px;\n  padding: 20px 20px;\n  margin: 50px auto;\n  display: grid;\n  grid-template-columns: 1.5fr 1fr auto;\n  gap: 100px;\n  justify-content: space-between;\n  align-items: center;\n  background-color: rgba(92, 1, 211, 0.801);\n  border-radius: 15px;\n}\n\n#pageContent .printContainer,\n.inputContainer {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  color: rgb(255, 255, 255);\n  width: 100%;\n  height: 380px;\n  padding: 10px;\n}\n\nbutton {\n  user-select: none;\n}\n\n.headTitle {\n  width: 100%;\n  height: 50px;\n  margin: 0 0 10px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.headTitle button {\n  width: 100px;\n  height: 30px;\n  outline: none;\n  border: none;\n  border-radius: 5px;\n  cursor: pointer;\n  font-size: 1rem;\n  color: rgb(255, 255, 255);\n  background: rgb(224, 0, 194);\n  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.35);\n}\n\n.listContainer {\n  border-collapse: collapse;\n  width: 95%;\n  height: 300px;\n  padding: 10px;\n  background-color: aliceblue;\n  border-radius: 5px;\n  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.35);\n  overflow-y: auto;\n  overflow-x: hidden;\n}\n\n.listContainer li {\n  list-style: none;\n  padding: 8px;\n  border-radius: 5px;\n  color: rgb(224, 0, 194);\n}\n\n.listContainer li:nth-child(even) {\n  background-color: rgba(92, 1, 211, 0.247);\n}\n\n.inputContainer .headTitle-1 {\n  width: 100%;\n  height: 50px;\n  display: flex;\n  margin: 0 0 10px;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.inputField {\n  position: relative;\n  width: 100%;\n  max-height: 300px;\n  display: flex;\n  flex-direction: column;\n  gap: 20px;\n}\n\n.inputField input {\n  height: 30px;\n  padding: 0 10px;\n  font-size: 0.9rem;\n  color: rgb(43, 43, 43);\n  outline: none;\n  border: none;\n  border-radius: 5px;\n  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.35);\n}\n\n.inputField button {\n  position: absolute;\n  width: 100px;\n  right: 0;\n  top: 100px;\n  height: 30px;\n  outline: none;\n  border: none;\n  border-radius: 5px;\n  cursor: pointer;\n  font-size: 1rem;\n  color: rgb(255, 255, 255);\n  background: rgb(224, 0, 194);\n  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.35);\n}\n\nbutton:active {\n  color: rgb(224, 0, 194);\n  background-color: #f3f1f1;\n  transform: scale(0.95);\n}\n\n.status {\n  position: absolute;\n  width: 85%;\n  height: 30px;\n  top: 360px;\n  padding: 0 10px;\n  display: flex;\n  align-items: center;\n  font-size: .7rem;\n  position: relative;\n  width: 100%;\n  height: 30px;\n  top: 100px;\n  display: flex;\n  align-items: center;\n  font-size: 0.7rem;\n  border-radius: 6px;\n  background-color: #f0f8ff;\n  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.35);\n}\n\n#statusShowHide {\n  width: 96%;\n  height: 100%;\n  margin: auto;\n  display: flex;\n  align-items: center;\n}\n\n.status .success {\n  display: none;\n}\n\n.footer {\n  position: absolute;\n  width: 100%;\n  height: 50px;\n  bottom: 0;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background-color: #000;\n}\n\n.footer p {\n  color: rgb(145, 145, 145);\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -480,6 +480,78 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_media_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(12);
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_media_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_media_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_media_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_media_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+/* 12 */
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "@media (max-width: 991px) {\n  body {\n    background: linear-gradient(to top, rgb(218, 218, 218) 0%, #f5f5f5 100%);\n  }\n\n  header {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    height: 60px !important;\n    margin: 20px auto;\n  }\n\n  .title h1 {\n    font-size: 2rem;\n    margin: auto;\n  }\n\n  header .bar {\n    width: 50px;\n    height: 2px;\n    background-color: rgb(92, 1, 211, 0.801);\n    visibility: visible !important;\n  }\n\n  #pageContent {\n    width: 80%;\n    gap: 20px;\n    margin: 30px auto;\n    height: auto;\n    display: flex;\n    flex-direction: column-reverse;\n    align-items: center;\n  }\n\n  .inputContainer {\n    position: relative;\n    height: 250px;\n  }\n\n  .printContainer button,\n  .inputContainer button {\n    width: 80px;\n    height: 25px;\n    font-size: 0.6rem;\n  }\n\n  .inputContainer .headTitle-1,\n  h2 {\n    width: 100%;\n    height: 30px;\n    display: flex;\n    align-items: center;\n    font-size: 1.2rem;\n  }\n\n  .inputField {\n    margin: 20px auto;\n    width: 100%;\n  }\n\n  .status {\n    position: relative;\n    width: 100%;\n    top: 50px;\n  }\n\n  .footer {\n    position: relative;\n    font-size: 0.7rem;\n  }\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+/* 13 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 class Lead {
   constructor() {
     this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
@@ -525,7 +597,7 @@ class Lead {
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Lead);
 
 /***/ }),
-/* 12 */
+/* 14 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -632,8 +704,10 @@ var __webpack_exports__ = {};
 (() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _modules_lead_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
-/* harmony import */ var _modules_front_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
+/* harmony import */ var _media_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _modules_lead_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(13);
+/* harmony import */ var _modules_front_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(14);
+
 
 
 
@@ -643,8 +717,8 @@ const user = document.getElementById('username');
 const score = document.getElementById('score');
 const refreshBtn = document.getElementById('refreshBtn');
 
-const leads = new _modules_lead_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
-const front = new _modules_front_js__WEBPACK_IMPORTED_MODULE_2__["default"]();
+const leads = new _modules_lead_js__WEBPACK_IMPORTED_MODULE_2__["default"]();
+const front = new _modules_front_js__WEBPACK_IMPORTED_MODULE_3__["default"]();
 
 let gameId;
 const start = () => {
@@ -671,16 +745,16 @@ form.addEventListener('submit', postScore);
 refreshBtn.addEventListener('click', getScore);
 
 const submitBtn = document.getElementById('btn');
-const msgContainer = document.querySelector('.status');
+const msgContainer = document.querySelector('#statusShowHide');
 const successMsg = document.createElement('span');
 successMsg.className = 'success';
-successMsg.innerText = '✅ Success!!!';
+successMsg.innerText = '✅  Success!!!';
 successMsg.style.color = 'green';
 msgContainer.appendChild(successMsg);
 
 const rejectMsg = document.createElement('span');
 rejectMsg.className = 'reject';
-rejectMsg.innerText = '❌ Fail, required fields!!!';
+rejectMsg.innerText = '❌  Fail, required fields!!!';
 msgContainer.appendChild(rejectMsg);
 rejectMsg.style.color = 'red';
 rejectMsg.style.display = 'none';
