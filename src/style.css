@@ -4,6 +4,35 @@
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
+main {
+  height: 78vh;
+}
+
+body {
+  background: linear-gradient(to top, #999 0%, #f5f5f5 100%);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 26, 255, 0.795);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(247, 0, 255, 0.8);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(247, 0, 255, 0.8);
+}
+
 .title {
   width: 100%;
   height: 100px;
@@ -11,31 +40,41 @@
 }
 
 .title h1 {
-  font-size: 3rem;
-  margin: 50px 20px;
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 50px 200px;
+  color: rgb(224, 0, 194);
 }
 
 #pageContent {
-  width: 90%;
-  height: 85vh;
-  padding: 0 20px;
-  margin: auto;
+  width: 60%;
+  height: 400px;
+  padding: 20px 20px;
+  margin: 50px auto;
   display: grid;
   grid-template-columns: 1fr 1fr auto;
   gap: 100px;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(92, 1, 211, 0.801);
+  border-radius: 15px;
 }
 
 #pageContent .printContainer,
 .inputContainer {
-  width: 600px;
-  height: 500px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 400px;
+}
+
+button {
+  user-select: none;
 }
 
 .headTitle {
   height: 50px;
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,41 +83,52 @@
 .headTitle button {
   width: 100px;
   height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  background: rgb(224, 0, 194);
+  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.35);
 }
 
-.table {
+.listContainer {
   border-collapse: collapse;
   width: 100%;
-  border: 2px solid black;
+  height: 300px;
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.35);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-.table td {
-  border: none;
+.listContainer li {
+  list-style: none;
   padding: 8px;
+  border-radius: 5px;
+  color: rgb(224, 0, 194);
 }
 
-.table tr:nth-child(even) {
-  background-color: #f2f2f2;
+.listContainer li:nth-child(even) {
+  background-color: rgba(92, 1, 211, 0.247);
 }
-
-/* .table tr:hover {
-    background-color: #ddd;
-    color: brown;
-} */
 
 .inputContainer .headTitle-1 {
   width: 60%;
   height: 50px;
   display: flex;
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   justify-content: space-between;
   align-items: center;
 }
 
 .inputField {
   position: relative;
-  width: 60%;
-  height: 300px;
+  width: 90%;
+  max-height: 300px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -87,8 +137,12 @@
 .inputField input {
   height: 30px;
   padding: 0 10px;
+  font-size: 0.9rem;
+  color: rgb(43, 43, 43);
   outline: none;
-  border: 2px solid #000;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.35);
 }
 
 .inputField button {
@@ -97,4 +151,51 @@
   top: 100px;
   width: 100px;
   height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  background: rgb(224, 0, 194);
+  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.35);
+}
+
+button:active {
+  color: rgb(224, 0, 194);
+  background-color: #f3f1f1;
+  transform: scale(0.95);
+}
+
+.status {
+  width: 85%;
+  height: 40px;
+  top: 400px;
+  margin: 200px 0;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #f0f8ff;
+  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.35);
+}
+
+.status .success {
+  display: none;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.footer p {
+  color: rgb(145, 145, 145);
 }
