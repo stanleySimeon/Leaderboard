@@ -8,7 +8,8 @@
     "start": "webpack serve --open",
     "build": "webpack",
     "test": "jest",
-    "watch": "jest --watch *.js"
+    "watch": "jest --watch *.js",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -47,6 +48,7 @@
     "@fortawesome/fontawesome-free": "^6.0.0",
     "@lhci/cli": "^0.9.0",
     "ember": "^1.0.3",
+    "gh-pages": "^3.2.3",
     "lodash": "^4.17.21"
   }
 }
