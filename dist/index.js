@@ -618,8 +618,18 @@ class Front {
     array.forEach((element) => {
       const item = document.createElement('li');
       item.className = 'item';
+
+      const spanIcon = document.createElement('span');
+      spanIcon.className = 'userIcon';
+      item.appendChild(spanIcon);
+
+      const spanScore = document.createElement('span');
+      spanScore.className = 'userScore';
+      item.appendChild(spanScore);
+
       this.listContainer.appendChild(item);
-      item.innerHTML += `${element.user} : ${element.score}`;
+      spanIcon.innerHTML += `${element.user}`;
+      spanScore.innerHTML += `${element.score}`;
     });
   }
 
@@ -732,7 +742,6 @@ const start = () => {
 
 const getScore = () => {
   leads.getScore(gameId).then((response) => front.arrayToFront(response.result));
-  console.log(refreshBtn);
 };
 
 const postScore = (event) => {
