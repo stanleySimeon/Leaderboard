@@ -18,8 +18,8 @@ class Lead {
     return resData;
   }
 
-  async getScore(gameId) {
-    const res = await fetch(`${this.url}${gameId}/scores/`);
+  async getScore() {
+    const res = await fetch(`${this.url}/scores/`);
     const resData = await res.json();
     return resData;
   }
