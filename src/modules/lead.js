@@ -24,7 +24,7 @@ class Lead {
     return resData;
   }
 
-  async postScore(gameId, username, score) {
+  async postScore(username, score) {
     const res = await fetch(`${this.url}/scores/`, {
       method: 'POST',
       body: JSON.stringify({
