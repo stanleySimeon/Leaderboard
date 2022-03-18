@@ -17,12 +17,13 @@ const start = () => {
     .start('SpiderGame')
     .then((response) => response.result.split(' '))
     .then((response) => {
-      [gameId] = [response[3]];
+      [gameId] = [response];
     });
 };
 
 const getScore = () => {
   leads.getScore(gameId).then((response) => front.arrayToFront(response.result));
+  console.log(refreshBtn);
 };
 
 const postScore = (event) => {

@@ -554,8 +554,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 class Lead {
   constructor() {
-    this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
-    this.storage = localStorage;
+    this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/zyn7RP7VqpQlon8XRO5U/scores/';
   }
 
   async start(spiderGame) {
@@ -727,12 +726,13 @@ const start = () => {
     .start('SpiderGame')
     .then((response) => response.result.split(' '))
     .then((response) => {
-      [gameId] = [response[3]];
+      [gameId] = [response];
     });
 };
 
 const getScore = () => {
   leads.getScore(gameId).then((response) => front.arrayToFront(response.result));
+  console.log(refreshBtn);
 };
 
 const postScore = (event) => {
