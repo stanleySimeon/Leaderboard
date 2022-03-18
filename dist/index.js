@@ -554,8 +554,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 class Lead {
   constructor() {
-    this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
-    this.storage = localStorage;
+    this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/zyn7RP7VqpQlon8XRO5U/scores/';
   }
 
   async start(spiderGame) {
@@ -573,14 +572,14 @@ class Lead {
     return resData;
   }
 
-  async getScore(gameId) {
-    const res = await fetch(`${this.url}${gameId}/scores/`);
+  async getScores() {
+    const res = await fetch(`${this.url}/scores/`);
     const resData = await res.json();
     return resData;
   }
 
-  async postScore(gameId, username, score) {
-    const res = await fetch(`${this.url}${gameId}/scores/`, {
+  async postScore(username, score) {
+    const res = await fetch(`${this.url}/scores/`, {
       method: 'POST',
       body: JSON.stringify({
         user: username,
@@ -619,8 +618,18 @@ class Front {
     array.forEach((element) => {
       const item = document.createElement('li');
       item.className = 'item';
+
+      const spanIcon = document.createElement('span');
+      spanIcon.className = 'userIcon';
+      item.appendChild(spanIcon);
+
+      const spanScore = document.createElement('span');
+      spanScore.className = 'userScore';
+      item.appendChild(spanScore);
+
       this.listContainer.appendChild(item);
-      item.innerHTML += `${element.user} : ${element.score}`;
+      spanIcon.innerHTML += `${element.user}`;
+      spanScore.innerHTML += `${element.score}`;
     });
   }
 
@@ -727,7 +736,7 @@ const start = () => {
     .start('SpiderGame')
     .then((response) => response.result.split(' '))
     .then((response) => {
-      [gameId] = [response[3]];
+      [gameId] = [response];
     });
 };
 
