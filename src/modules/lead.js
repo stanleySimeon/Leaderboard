@@ -1,6 +1,6 @@
 class Lead {
   constructor() {
-    this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
+    this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/zyn7RP7VqpQlon8XRO5U/scores/';
   }
 
   async start(spiderGame) {
