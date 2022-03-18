@@ -554,7 +554,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 class Lead {
   constructor() {
-    this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
+    this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/zyn7RP7VqpQlon8XRO5U/scores/';
   }
 
   async start(spiderGame) {
@@ -572,8 +572,8 @@ class Lead {
     return resData;
   }
 
-  async getScore(gameId) {
-    const res = await fetch(`${this.url}${gameId}/scores/`);
+  async getScore() {
+    const res = await fetch(`${this.url}/scores/`);
     const resData = await res.json();
     return resData;
   }
