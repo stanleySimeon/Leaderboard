@@ -18,7 +18,7 @@ class Lead {
     return resData;
   }
 
-  async getScore() {
+  async getScores() {
     const res = await fetch(`${this.url}/scores/`);
     const resData = await res.json();
     return resData;
