@@ -18,14 +18,14 @@ class Lead {
     return resData;
   }
 
-  async getScore() {
+  async getScores() {
     const res = await fetch(`${this.url}/scores/`);
     const resData = await res.json();
     return resData;
   }
 
-  async postScore(gameId, username, score) {
-    const res = await fetch(`${this.url}${gameId}/scores/`, {
+  async postScore(username, score) {
+    const res = await fetch(`${this.url}/scores/`, {
       method: 'POST',
       body: JSON.stringify({
         user: username,

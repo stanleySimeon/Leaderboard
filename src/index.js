@@ -17,7 +17,7 @@ const start = () => {
     .start('SpiderGame')
     .then((response) => response.result.split(' '))
     .then((response) => {
-      [gameId] = [response[3]];
+      [gameId] = [response];
     });
 };
 
