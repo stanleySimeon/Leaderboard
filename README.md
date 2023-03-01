@@ -48,4 +48,4 @@ Give a ⭐️ if you like this project!
 ## LICENSE
 
 This project is MIT licensed.
-[License](MIT.md)
+[License](./MIT.md)
