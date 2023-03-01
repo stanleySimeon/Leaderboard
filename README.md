@@ -48,4 +48,4 @@ Give a ⭐️ if you like this project!
 ## LICENSE
 
 This project is MIT licensed.
-[License](https://github.com/mstanley-me/toDoList/blob/main/LICENSE)
+[License](MIT.md)
