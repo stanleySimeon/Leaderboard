@@ -1,4 +1,5 @@
 import './style.css';
+import './media.css';
 import Lead from './modules/lead.js';
 import Front from './modules/front.js';
 
@@ -38,12 +39,13 @@ const submitBtn = document.getElementById('btn');
 const msgContainer = document.querySelector('.status');
 const successMsg = document.createElement('span');
 successMsg.className = 'success';
-successMsg.innerText = '✅ Success!!!';
+successMsg.innerText = '✅  Success!!!';
+successMsg.style.color = 'green';
 msgContainer.appendChild(successMsg);
 
 const rejectMsg = document.createElement('span');
 rejectMsg.className = 'reject';
-rejectMsg.innerText = '❌ Fail, required fields!!!';
+rejectMsg.innerText = '❌  Fail, required fields!!!';
 msgContainer.appendChild(rejectMsg);
 rejectMsg.style.color = 'red';
 rejectMsg.style.display = 'none';
@@ -55,6 +57,5 @@ submitBtn.addEventListener('click', () => {
   } else {
     rejectMsg.style.display = 'none';
     successMsg.style.display = 'block';
-    successMsg.style.color = 'green';
   }
 });
